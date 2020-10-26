@@ -43,7 +43,7 @@ public class SimuladorHipotenusa {
         }
 
         if(!error) {
-            callback.cuandoEsteCalculadaLaHipotenusa(calculo.capital * interes / 12 / (1 - Math.pow(1 + (interes / 12), -solicitud.plazo * 12)));
+            callback.cuandoEsteCalculadaLaHipotenusa(Math.sqrt(Math.pow(calculo.catetoA,2)+Math.pow(calculo.catetoB,2)));
         }
         callback.cuandoFinaliceElCalculo();
     }
